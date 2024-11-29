@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download .exe Example</title>
+</head>
+<body>
+    <h1>Click below to download the .exe file</h1>
+    <button id="downloadBtn">Download Now</button>
+
+    <script type="text/javascript">
+        document.getElementById("downloadBtn").addEventListener("click", function() {
+            var fileUrl = "https://example.com/path/to/yourfile.exe"; // Change this to your file's URL
+            var link = document.createElement("a");
+            link.href = fileUrl;
+            link.download = "yourfile.exe"; // Optionally specify the file name
+            link.click();
+        });
+    </script>
+</body>
+</html>
